@@ -1,0 +1,13 @@
+{
+  "TableName": "SolicitacoesTroca",
+  "KeySchema": [
+    {"AttributeName": "troca_id", "KeyType": "HASH"}
+  ],
+  "AttributeDefinitions": [
+    {"AttributeName": "troca_id", "AttributeType": "S"}
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}

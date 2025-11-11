@@ -1,0 +1,7 @@
+{
+  "QueueName": "fila-troca-notificacoes",
+  "Attributes": {
+    "VisibilityTimeout": "60",
+    "MessageRetentionPeriod": "86400"
+  }
+}
