@@ -12,6 +12,15 @@ Quando um usuário solicita uma troca, o sistema grava a requisição no banco d
    - Envia notificações via **Amazon SNS** (simulação de SMS/e-mail);
    - Atualiza o status da solicitação no **DynamoDB**.
 
+⚙️ Resumindo o que faz cada parte
+**API Gateway**	Recebe as requisições do app (HTTP).
+**Lambda 1**	Cria a solicitação de troca e envia para a fila.
+**SQS**	Guarda as mensagens de troca até serem processadas.
+**Lambda 2**	Lê as mensagens da fila, envia notificações e atualiza o status.
+**SNS**	Envia as notificações (SMS/e-mail) para os usuários.
+**DynamoDB**	Armazena as solicitações e seus status.
+
+
 ### 🔹 Serviços AWS Utilizados
 - **Amazon API Gateway** — ponto de entrada da aplicação  
 - **AWS Lambda** — funções que processam os eventos  
