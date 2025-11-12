@@ -19,11 +19,6 @@ Quando um usuário solicita uma troca, o sistema grava a requisição no banco d
 - **Amazon SNS** — envio de SMS/e-mail  
 - **Amazon DynamoDB** — banco de dados para armazenar solicitações
 
-## ⚙️ Tecnologias
-- Python 3.12  
-- AWS SDK (boto3)  
-- Arquitetura serverless  
-- Serviços da AWS (Lambda, SQS, SNS, DynamoDB)
 
 ## 🚀 Objetivo
 Demonstrar uma arquitetura moderna, escalável e assíncrona de trocas de celulares com persistência e notificações automáticas.
